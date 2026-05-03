@@ -198,7 +198,3 @@ This project simulates a real-world **digital payment system** and can be extend
 Contributions are welcome! Feel free to fork the repo and submit a PR.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
