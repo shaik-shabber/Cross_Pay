@@ -1,0 +1,410 @@
+{
+  "users": [
+    {
+      "id": "usr_92546d532ac6",
+      "fullName": "Ava Admin",
+      "email": "admin@crosspay.com",
+      "passwordHash": "$2b$10$P6yVADJ9t0SQNaAYf5jmQ.QEm2HbVXbw0290ds8.Jdx1OdRT80f1G",
+      "role": "ADMIN",
+      "country": "United States",
+      "phone": "+1 202 555 0192",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z",
+      "address": "New York, USA",
+      "occupation": "Operations Director",
+      "accountStatus": "ACTIVE",
+      "fraudFlag": false,
+      "adminNote": "",
+      "kycStatus": "VERIFIED",
+      "preferredTransferType": "smart"
+    },
+    {
+      "id": "usr_5f891c83dcb0",
+      "fullName": "Rahul Mehta",
+      "email": "user@crosspay.com",
+      "passwordHash": "$2b$10$Dw4.ZAFhnXMhJfWDJEUPaevlHpWE8GySQTTPf95611flqvwZyF6Gu",
+      "role": "USER",
+      "country": "India",
+      "phone": "+91 98765 43210",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z",
+      "address": "Mumbai, India",
+      "occupation": "Import Business Owner",
+      "accountStatus": "ACTIVE",
+      "fraudFlag": false,
+      "adminNote": "",
+      "kycStatus": "VERIFIED",
+      "preferredTransferType": "smart"
+    },
+    {
+      "id": "usr_3e96d8661a76",
+      "fullName": "demo",
+      "email": "userhhhy@crosspay.com",
+      "passwordHash": "$2b$10$Tw/6Lz5jGk7RB6JydVrXFu3OY8QHSvD0qmBiroyWUcoAOkjrTXE0q",
+      "role": "USER",
+      "country": "United States",
+      "phone": "",
+      "createdAt": "2026-04-09T06:19:39.034Z",
+      "updatedAt": "2026-04-09T06:19:39.034Z"
+    },
+    {
+      "id": "usr_e5c3e425cf19",
+      "fullName": "shabber shaik",
+      "email": "shabber_shaik@gmail.com",
+      "passwordHash": "$2b$10$OC3VrDkAcfgNTCCJ2jb.W.VBeflErJx0tCzO4LcoMPx0.FW1Afjfq",
+      "role": "USER",
+      "country": "United States",
+      "phone": "",
+      "address": "",
+      "occupation": "",
+      "accountStatus": "ACTIVE",
+      "fraudFlag": false,
+      "adminNote": "",
+      "kycStatus": "VERIFIED",
+      "preferredTransferType": "smart",
+      "createdAt": "2026-04-10T10:34:37.550Z",
+      "updatedAt": "2026-04-10T10:34:37.550Z"
+    },
+    {
+      "id": "usr_6470cd040f0e",
+      "fullName": "shaik sameer",
+      "email": "sameer_shaik@gmail.com",
+      "passwordHash": "$2b$10$XVL3evMpnllA.ER1wRGhL.EMmEB6iN4piotpM74dHR.DzTYoEPvg6",
+      "role": "USER",
+      "country": "United States",
+      "phone": "",
+      "address": "",
+      "occupation": "",
+      "accountStatus": "ACTIVE",
+      "fraudFlag": false,
+      "adminNote": "",
+      "kycStatus": "VERIFIED",
+      "preferredTransferType": "smart",
+      "createdAt": "2026-04-13T15:30:58.816Z",
+      "updatedAt": "2026-04-13T15:30:58.816Z"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "wal_1934ecbfa566",
+      "userId": "usr_92546d532ac6",
+      "defaultCurrency": "USD",
+      "balances": {
+        "USD": 25000,
+        "EUR": 9000,
+        "INR": 300000
+      },
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "wal_43d94ade5fca",
+      "userId": "usr_5f891c83dcb0",
+      "defaultCurrency": "USD",
+      "balances": {
+        "USD": 12500,
+        "EUR": 2200,
+        "INR": 150000,
+        "GBP": 1400
+      },
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "wal_bcf9dc21c646",
+      "userId": "usr_3e96d8661a76",
+      "defaultCurrency": "USD",
+      "balances": {
+        "USD": 5000,
+        "EUR": 1000,
+        "INR": 25000
+      },
+      "createdAt": "2026-04-09T06:19:39.034Z",
+      "updatedAt": "2026-04-09T06:19:39.034Z"
+    },
+    {
+      "id": "wal_2f8f0bcc4e03",
+      "userId": "usr_e5c3e425cf19",
+      "defaultCurrency": "USD",
+      "balances": {
+        "USD": 5000,
+        "EUR": 1000,
+        "INR": 25000
+      },
+      "createdAt": "2026-04-10T10:34:37.550Z",
+      "updatedAt": "2026-04-10T10:34:37.550Z"
+    },
+    {
+      "id": "wal_8045a7bf9e8b",
+      "userId": "usr_6470cd040f0e",
+      "defaultCurrency": "USD",
+      "balances": {
+        "USD": 5000,
+        "EUR": 1000,
+        "INR": 25000
+      },
+      "createdAt": "2026-04-13T15:30:58.816Z",
+      "updatedAt": "2026-04-13T15:30:58.816Z"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "id": "ben_8d39128f7747",
+      "userId": "usr_e5c3e425cf19",
+      "fullName": "Shaik Moulali",
+      "email": "moulali_shaik@gmail.com",
+      "bankName": "Sate Bank of India",
+      "accountNumber": "098323982019",
+      "swiftCode": "dncis093",
+      "country": "INDIA",
+      "currency": "INR",
+      "createdAt": "2026-04-10T10:37:36.375Z",
+      "updatedAt": "2026-04-10T10:37:36.375Z"
+    },
+    {
+      "id": "ben_f15081afd068",
+      "userId": "usr_5f891c83dcb0",
+      "fullName": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "bankName": "HDFC Bank",
+      "accountNumber": "XXXX-9087",
+      "swiftCode": "HDFCINBB",
+      "country": "India",
+      "currency": "INR",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "ben_f809806fa540",
+      "userId": "usr_5f891c83dcb0",
+      "fullName": "Oliver Smith",
+      "email": "oliver.smith@example.com",
+      "bankName": "HSBC UK",
+      "accountNumber": "XXXX-1122",
+      "swiftCode": "MIDLGB22",
+      "country": "United Kingdom",
+      "currency": "GBP",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    }
+  ],
+  "credits": [
+    {
+      "id": "crd_f0dcb1588958",
+      "userId": "usr_92546d532ac6",
+      "score": 830,
+      "riskLevel": "LOW",
+      "monthlyVolume": 0,
+      "transactionCount": 0,
+      "eligibleLoanAmount": 0,
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "crd_25d7d50401f9",
+      "userId": "usr_5f891c83dcb0",
+      "score": 736.0454545454545,
+      "riskLevel": "MEDIUM",
+      "monthlyVolume": 2650,
+      "transactionCount": 3,
+      "eligibleLoanAmount": 5222.05,
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-10T10:05:12.442Z"
+    },
+    {
+      "id": "crd_087ba0c43a9f",
+      "userId": "usr_3e96d8661a76",
+      "score": 700,
+      "riskLevel": "MEDIUM",
+      "monthlyVolume": 0,
+      "transactionCount": 0,
+      "eligibleLoanAmount": 3600,
+      "createdAt": "2026-04-09T06:19:39.034Z",
+      "updatedAt": "2026-04-09T06:20:33.486Z"
+    },
+    {
+      "id": "crd_cc7d8993c312",
+      "userId": "usr_e5c3e425cf19",
+      "score": 700,
+      "riskLevel": "MEDIUM",
+      "monthlyVolume": 0,
+      "transactionCount": 0,
+      "eligibleLoanAmount": 3600,
+      "createdAt": "2026-04-10T10:34:37.550Z",
+      "updatedAt": "2026-04-13T15:29:01.846Z"
+    },
+    {
+      "id": "crd_a46a7c65ccee",
+      "userId": "usr_6470cd040f0e",
+      "score": 700,
+      "riskLevel": "LOW",
+      "monthlyVolume": 0,
+      "transactionCount": 0,
+      "eligibleLoanAmount": 5000,
+      "createdAt": "2026-04-13T15:30:58.816Z",
+      "updatedAt": "2026-04-13T15:30:58.816Z"
+    }
+  ],
+  "loans": [
+    {
+      "id": "lon_9362aaeb1c21",
+      "userId": "usr_5f891c83dcb0",
+      "amount": 5000,
+      "purpose": "Working capital",
+      "tenureMonths": 12,
+      "interestRate": 10.9,
+      "status": "approved",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "lon_91e9f488385d",
+      "userId": "usr_5f891c83dcb0",
+      "amount": 8000,
+      "purpose": "Education support",
+      "tenureMonths": 18,
+      "interestRate": 11.8,
+      "status": "pending",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "txn_3ae68580f47b",
+      "reference": "CP-80F47B",
+      "userId": "usr_5f891c83dcb0",
+      "beneficiaryId": "ben_f15081afd068",
+      "amountSent": 1200,
+      "amountReceived": 101236.8,
+      "currencyFrom": "USD",
+      "currencyTo": "INR",
+      "exchangeRate": 84.364,
+      "routingPath": [
+        "USD",
+        "EUR",
+        "INR"
+      ],
+      "transferType": "smart",
+      "feeAmount": 13.2,
+      "totalDebit": 1213.2,
+      "savingsAmount": 18.5,
+      "status": "completed",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z",
+      "completedAt": "2026-04-09T05:51:20.260Z",
+      "scheduledFor": null
+    },
+    {
+      "id": "txn_376da1fa1cdc",
+      "reference": "CP-FA1CDC",
+      "userId": "usr_5f891c83dcb0",
+      "beneficiaryId": "ben_f809806fa540",
+      "amountSent": 800,
+      "amountReceived": 630.88,
+      "currencyFrom": "USD",
+      "currencyTo": "GBP",
+      "exchangeRate": 0.7886,
+      "routingPath": [
+        "USD",
+        "GBP"
+      ],
+      "transferType": "instant",
+      "feeAmount": 14.4,
+      "totalDebit": 814.4,
+      "savingsAmount": 0,
+      "status": "completed",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z",
+      "completedAt": "2026-04-09T05:51:20.260Z",
+      "scheduledFor": null
+    },
+    {
+      "id": "txn_3c98b5fa5804",
+      "reference": "CP-FA5804",
+      "userId": "usr_5f891c83dcb0",
+      "beneficiaryId": "ben_f15081afd068",
+      "amountSent": 650,
+      "amountReceived": 54836.6,
+      "currencyFrom": "USD",
+      "currencyTo": "INR",
+      "exchangeRate": 84.364,
+      "routingPath": [
+        "USD",
+        "EUR",
+        "INR"
+      ],
+      "transferType": "best_rate",
+      "feeAmount": 4.88,
+      "totalDebit": 654.88,
+      "savingsAmount": 21.14,
+      "status": "completed",
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z",
+      "completedAt": "2026-04-09T05:51:20.260Z",
+      "scheduledFor": null
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_89e02bc50ab7",
+      "userId": "usr_6470cd040f0e",
+      "title": "Welcome to CrossPay",
+      "message": "Your multi-currency wallet and credit profile are ready. Add a beneficiary to send your first transfer.",
+      "type": "system",
+      "read": true,
+      "createdAt": "2026-04-13T15:30:58.816Z",
+      "updatedAt": "2026-04-13T15:31:57.389Z"
+    },
+    {
+      "id": "ntf_bdb616c63875",
+      "userId": "usr_e5c3e425cf19",
+      "title": "Welcome to CrossPay",
+      "message": "Your multi-currency wallet and credit profile are ready. Add a beneficiary to send your first transfer.",
+      "type": "system",
+      "read": true,
+      "createdAt": "2026-04-10T10:34:37.550Z",
+      "updatedAt": "2026-04-10T10:34:55.417Z"
+    },
+    {
+      "id": "ntf_115b5ad1c1b8",
+      "userId": "usr_3e96d8661a76",
+      "title": "Welcome to CrossPay",
+      "message": "Your multi-currency wallet and credit profile are ready. Add a beneficiary to send your first transfer.",
+      "type": "system",
+      "read": false,
+      "createdAt": "2026-04-09T06:19:39.034Z",
+      "updatedAt": "2026-04-09T06:19:39.034Z"
+    },
+    {
+      "id": "ntf_ec0247a18643",
+      "userId": "usr_5f891c83dcb0",
+      "title": "Transfer completed",
+      "message": "Your smart USD to INR transfer to Priya Sharma settled successfully.",
+      "type": "transaction",
+      "read": false,
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "ntf_961b4e15598f",
+      "userId": "usr_5f891c83dcb0",
+      "title": "Loan offer refreshed",
+      "message": "Your current credit score unlocks pre-qualified loans up to $12,000.",
+      "type": "loan",
+      "read": false,
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-09T05:51:20.260Z"
+    },
+    {
+      "id": "ntf_20c4a7623624",
+      "userId": "usr_92546d532ac6",
+      "title": "Platform heartbeat",
+      "message": "CrossPay demo environment initialized successfully.",
+      "type": "system",
+      "read": true,
+      "createdAt": "2026-04-09T05:51:20.260Z",
+      "updatedAt": "2026-04-10T10:08:41.885Z"
+    }
+  ]
+}

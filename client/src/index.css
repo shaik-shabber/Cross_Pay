@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================= ROOT ================= */
+:root {
+  color-scheme: light;
+  --ink: #0f172a;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --page: #f3f6fb;
+  --line: #dbe4f0;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f7f9fd 0%, #eef3f8 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ================= BASE ================= */
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    letter-spacing: 0;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+}
+
+/* ================= COMPONENTS ================= */
+@layer components {
+
+  /* Cards */
+  .section-card {
+    @apply rounded-[1.75rem] border bg-white p-6 shadow-bloom;
+  }
+
+  .metric-card {
+    @apply rounded-[1.5rem] border bg-white p-5 shadow-bloom transition duration-200 hover:-translate-y-0.5 hover:shadow-soft;
+  }
+
+  .soft-card {
+    @apply rounded-[1.5rem] border bg-slate-50 p-5;
+  }
+
+  .surface-card {
+    @apply rounded-[1.75rem] border border-white/80 bg-white/90 shadow-bloom backdrop-blur;
+  }
+
+  /* Input */
+  /* .input-field {
+    @apply w-full rounded-2xl border bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 outline-none transition;
+  } */
+
+  .input-field {
+  @apply w-full rounded-2xl border bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 outline-none transition;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+  .input-field:focus {
+    @apply border-brand bg-white ring-4 ring-brand/10;
+  }
+
+  /* Buttons */
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-2xl bg-brand px-5 py-3 text-center text-sm font-semibold text-white shadow-soft transition;
+  }
+
+  .primary-button:hover {
+    @apply bg-brand-dark;
+  }
+
+  .primary-button:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-2xl border bg-white px-5 py-3 text-center text-sm font-semibold text-slate-700 transition;
+  }
+
+  .secondary-button:hover {
+    @apply border-slate-300 bg-slate-50;
+  }
+
+  .danger-button {
+    @apply inline-flex items-center justify-center rounded-2xl bg-red-50 px-5 py-3 text-center text-sm font-semibold text-red-600 transition;
+  }
+
+  .danger-button:hover {
+    @apply bg-red-100;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply inline-flex items-center justify-center rounded-2xl border border-transparent px-4 py-2.5 text-sm font-semibold text-slate-500 transition;
+  }
+
+  .nav-link:hover {
+    @apply border-slate-200 bg-slate-50 text-ink;
+  }
+
+  .nav-link-active {
+    @apply border-brand bg-brand text-white shadow-soft;
+  }
+
+  /* Pills & badges */
+  .pill {
+    @apply inline-flex items-center rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold text-brand;
+  }
+
+  .table-chip {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold;
+  }
+
+  .status-dot {
+    @apply h-2.5 w-2.5 rounded-full;
+  }
+
+  /* Cards */
+  .demo-credential-card {
+    @apply rounded-[1.5rem] border bg-slate-50 p-4 text-left transition duration-200 hover:-translate-y-0.5 hover:bg-white hover:shadow-bloom;
+  }
+
+  /* Icons */
+  .icon-button {
+    @apply inline-flex h-12 w-12 items-center justify-center rounded-full border bg-white text-slate-600 shadow-sm transition;
+  }
+
+  .icon-button:hover {
+    @apply border-brand/25 text-brand shadow-bloom;
+  }
+
+  /* Dropdown */
+  .dropdown-panel {
+    @apply absolute right-0 top-full z-30 mt-3 w-[min(320px,calc(100vw-2rem))] rounded-[1.5rem] border bg-white p-4 shadow-soft;
+  }
+
+  /* Hero sections */
+  .hero-card {
+    @apply overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-[#2563eb] via-[#3459f1] to-[#7c3aed] p-6 text-white shadow-soft;
+  }
+
+  .wallet-hero {
+    @apply overflow-hidden rounded-[1.75rem] p-6 text-white shadow-soft;
+    background:
+      radial-gradient(circle at top right, rgba(255,255,255,0.16), transparent 24%),
+      radial-gradient(circle at bottom center, rgba(255,255,255,0.08), transparent 20%),
+      linear-gradient(135deg, #1839c7 0%, #5b21b6 100%);
+  }
+}
+
+@keyframes celebrationFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  82% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.98);
+  }
+}
+
+@keyframes celebrationPlane {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-8deg);
+  }
+}
+
+@keyframes celebrationPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.72);
+  }
+
+  45% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+.celebration-shell {
+  animation: celebrationFloat 2.6s ease both;
+}
+
+.celebration-plane {
+  animation: celebrationPlane 1.25s ease-in-out infinite;
+}
+
+.celebration-ring {
+  animation: celebrationPulse 1.7s ease-out infinite;
+}
+
+.celebration-ring-delay {
+  animation-delay: 0.4s;
+}
